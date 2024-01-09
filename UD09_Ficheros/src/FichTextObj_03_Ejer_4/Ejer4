@@ -1,0 +1,115 @@
+ACTIVIDAD 1x04
+Codifica una clase Empleado para tratar la información de los diferentes empleados de una empresa. De
+cada uno de ellos se desea guardar: un código, el nombre, la fecha de nacimiento, el departamento y el
+salario en euros.
+El código de cada empleado será un número entero positivo identificativo. Cada empleado tendrá su propio
+código, es decir, no podrá haber dos o más empleados con el mismo código en la empresa.
+
+Para esta clase Empleado:
+• Codifica un constructor que reciba como parámetros el código, el nombre, la fecha de nacimiento, el
+departamento y el salario.
+
+• Codifica otro constructor que reciba como parámetro una línea de texto, que extraiga varias
+subcadenas de esta línea de texto utilizando el carácter ';' como separador y que inicialice los
+atributos del objeto con estas subcadenas generadas. Según el atributo, además podría ser necesario
+convertir una subcadena a número entero o real.
+
+• Codifica un método de objeto que devuelva una cadena de texto con el nombre de la clase
+(Empleado) y un resumen con los nombres y valores de todos los atributos del objeto. Para ello,
+sobrescribe el método toString que procede de la clase Object. El salario se deberá indicar con 2
+dígitos decimales. Este método se utilizará para visualizar un empleado en consola.
+
+• Codifica otro método de objeto toStringWithSeparators que devuelva una cadena de texto con
+los valores de todos los atributos del objeto, separados entre sí por el carácter ';'. El salario se
+deberá indicar con dos dígitos decimales y utilizando el carácter ',' para separar la parte entera de
+la parte fraccionaria. Este método se utilizará para guardar un empleado como una línea en un fichero
+de texto.
+
+Codifica una clase Actividad_1x04 que incluya un programa principal main. Este programa realizará
+operaciones de mantenimiento sobre un fichero de texto denominado empleados.txt. Este fichero
+almacenará los datos de cada empleado como una línea en el fichero de texto. Un ejemplo del contenido de
+este fichero, con 4 empleados, podría ser:
+1;Juan Serrano;30/05/1985;Contabilidad;3025.87
+2;Isabel Martínez;03/12/1992;Compras;2105.12
+3;Jorge Gil;17/02/1998;Ventas;2003.98
+4;Elena Gracia;24/08/2002;Recursos Humanos;1853.35
+
+
+Codifica un programa principal main que gestione el fichero de texto empleados.txt mediante el
+siguiente menú de opciones:
+
+0) Salir del programa.
+
+1) Insertar un empleado en el fichero de texto.
+Leerá por teclado el código, el nombre, la fecha de nacimiento, el departamento y el salario del
+empleado a insertar.
+Si el fichero de texto contiene un empleado con el código dado, visualizará en consola el mensaje:
+Ya existe otro empleado con ese código en el fichero de texto.
+Si el fichero de texto no contiene ningún empleado con el código dado, insertará el empleado al final
+del fichero de texto y visualizará en consola el mensaje:
+Se ha insertado un empleado en el fichero de texto.
+
+2) Consultar todos los empleados del fichero de texto.
+Si el fichero de texto no contiene ningún empleado, visualizará en consola el mensaje:
+El fichero de texto está vacío.
+Si el fichero de texto contiene uno o más empleados:
+- Leerá todos los empleados del fichero de texto.
+- Visualizará en consola un listado de todos los empleados almacenados en el fichero de texto,
+indicando para cada empleado, un resumen con los nombres y valores de todos los atributos de
+dicho empleado.
+- Visualizará en consola el número de empleados consultados del fichero de texto.
+Por ejemplo:
+Empleado [Código = 1, Nombre = Juan Serrano,
+ FechaNacimiento = 30/05/1985,
+ Departamento = Contabilidad, Salario = 3025,87]
+Empleado [Código = 2, Nombre = Isabel Martínez,
+ FechaNacimiento = 03/12/1992,
+ Departamento = Compras, Salario = 2105,12]
+Empleado [Código = 3, Nombre = Jorge Gil,
+ FechaNacimiento = 17/02/1998,
+ Departamento = Ventas, Salario = 2003,98]
+Empleado [Código = 4, Nombre = Elena Gracia,
+ FechaNacimiento = 24/08/2002,
+ Departamento = Recursos Humanos, Salario = 1853,35]
+Se han consultado 4 empleados del fichero de texto.
+
+3) Consultar un empleado, por código, del fichero de texto.
+Leerá por teclado el código del empleado a consultar.
+Si el fichero de texto no contiene ningún empleado con el código dado, visualizará en consola el
+mensaje:
+No existe ningún empleado con ese código en el fichero de texto.
+Si el fichero de texto contiene un empleado con el código dado, consultará el empleado del fichero de
+texto y visualizará en consola un resumen con los nombres y valores de todos los atributos de dicho
+empleado.
+El siguiente ejemplo muestra el empleado cuyo código es 2:
+Empleado [Código = 2, Nombre = Isabel Martínez,
+ FechaNacimiento = 03/12/1992,
+ Departamento = Compras, Salario = 2105,12]
+ 
+4) Actualizar un empleado, por código, del fichero de texto.
+Leerá por teclado el código, el nuevo departamento y el nuevo salario del empleado a actualizar.
+Si el fichero de texto no contiene ningún empleado con el código dado, visualizará en consola el
+mensaje:
+No existe ningún empleado con ese código en el fichero de texto.
+Si el fichero de texto contiene un empleado con el código dado, actualizará el empleado del fichero de
+texto con el nuevo departamento y el nuevo salario y visualizará en consola el mensaje:
+Se ha actualizado un empleado del fichero de texto.
+Para realizar esta operación de actualización, será necesario utilizar una colección auxiliar o un
+fichero de texto auxiliar.
+
+5) Eliminar un empleado, por código, del fichero de texto.
+Leerá por teclado el código del empleado a eliminar.
+Si el fichero de texto no contiene ningún empleado con el código dado, visualizará en consola el
+mensaje:
+No existe ningún empleado con ese código en el fichero de texto.
+
+Si el fichero de texto contiene un empleado con el código dado, eliminará el empleado del fichero de
+texto y visualizará en consola el mensaje:
+Se ha eliminado un empleado del fichero de texto.
+
+Para realizar esta operación de eliminación, será necesario utilizar una colección auxiliar o un fichero
+de texto auxiliar.
+
+Este programa principal deberá validar que la opción de menú elegida sea válida (comprendida entre 0 y 5).
+Si no lo es, visualizará en consola el mensaje:
+La opción de menú debe estar comprendida entre 0 y 5.

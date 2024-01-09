@@ -1,0 +1,33 @@
+EJERCICIOS DE FICHEROS DE TEXTO
+
+1) Escribir en consola el número de líneas y el número de caracteres de un fichero de texto.
+
+2) Escribir en consola el número de palabras de cada línea y el número total de palabras de un fichero de texto.
+
+3) Escribir en consola cuántas líneas diferentes hay en un fichero de texto.
+
+4) Escribir en consola cuántas líneas iguales hay en un fichero de texto. NO
+
+5) Eliminar de un fichero de texto las líneas duplicadas o repetidas.
+
+6) Eliminar de un fichero de texto las líneas que contengan una palabra leída por teclado.
+
+7) Mezclar dos ficheros de texto línea a línea en un fichero de salida.
+
+F1:
+linea1
+linea2
+linea3
+linea4
+
+F2:
+linea7
+linea8
+
+FSalida:
+linea1
+linea7
+linea2
+linea8
+linea3
+linea4

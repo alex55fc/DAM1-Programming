@@ -1,0 +1,4 @@
+frase 2
+frase 4
+frase 5
+frase 6

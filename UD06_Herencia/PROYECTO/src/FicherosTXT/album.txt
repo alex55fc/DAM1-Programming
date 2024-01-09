@@ -1,0 +1,3 @@
+11;musico;prueba;2022;estudioso;33;4
+12;banda;recopilatorio;2023;recopilatorio;22;4
+13;musico;juju;2021;directo;34 minutos;5
